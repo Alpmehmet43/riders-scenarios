@@ -9,9 +9,9 @@ import time
 class matematikIslemleri:
 
     @classmethod
-    def egimhesaplama(guncel_x,guncel_y,gidilecek_x,gidilecek_y):
-        yeni_y = hedef_y - y 
-        yeni_x = hedef__x - x
+    def aciHesaplama(guncel_x,guncel_y,hedef_x,hedef_y):
+        yeni_y = hedef_y - guncel_y 
+        yeni_x = hedef_x - guncel_x
         egim = math.atan2(yeni_y,yeni_x)
         sonuc = egim * (180/math.pi)
         return sonuc
